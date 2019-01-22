@@ -13,6 +13,7 @@ app.set('view engine', 'ejs');
 // Use Middleware
 app.use(methodOverride('_method'));
 app.use(layouts);
+app.use(express.urlencoded({ extended: false }));
 app.use('/', express.static('static'));
 
 // Declare routes
