@@ -22,7 +22,8 @@ module.exports = {
         type: Sequelize.TEXT
       },
       extinct: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
       },
       createdAt: {
         allowNull: false,
