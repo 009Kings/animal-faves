@@ -1,0 +1,29 @@
+{
+  "name": "animal-faves",
+  "version": "1.0.0",
+  "description": "project 2 assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/009Kings/animal-faves.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/009Kings/animal-faves/issues"
+  },
+  "homepage": "https://github.com/009Kings/animal-faves#readme",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "method-override": "^3.0.0",
+    "pg": "^7.8.0",
+    "sequelize": "^4.42.0",
+    "sequelize-cli": "^4.1.1"
+  }
+}
