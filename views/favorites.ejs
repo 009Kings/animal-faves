@@ -1,24 +1,11 @@
 <h1 class="ttu">Favourites</h1>
 
-<div id="fave-list">
-  <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 fave-card">
-    <div class="tc">
-      <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
-      <h1 class="f3 mb2">Mimi W.</h1>
-      <h2 class="f5 fw4 gray mt0">CCO (Chief Cat Officer)</h2>
-    </div>
-
-    <div class="hidable tc">
-      <dl class="f6 lh-title mv2">
-        <dt class="dib b mr2">Description:</dt>
-        <dd class="dib ml0 gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi magnam, laborum dolor aliquid voluptatibus atque? Laborum possimus impedit dicta amet fugiat libero, obcaecati, in ducimus, dolor rerum aut hic quos.</dd>
-      </dl>
-    </div>
-  </article>
+<div id="fave-list" >
 
 </div>
 
 <script>
-  var FAVORITES = null;
-  // TODO set Hidable to toggle none/block
+  var FAVORITES = <%- JSON.stringify(faves) %>;
+  // TODO set Hidable to toggle dn/db
 </script>
+<script src="faves.js"></script>

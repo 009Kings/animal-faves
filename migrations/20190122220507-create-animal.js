@@ -16,7 +16,6 @@ module.exports = {
       },
       image_url: {
         type: Sequelize.STRING,
-        defaultValue: 'https://i.pinimg.com/750x/93/62/60/936260aae1c544c77285b4b10f25bb02.jpg'
       },
       description: {
         type: Sequelize.TEXT

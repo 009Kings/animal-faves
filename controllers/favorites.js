@@ -3,7 +3,14 @@ var router = express.Router();
 var db = require('../models');
 
 router.get('/', (req, res)=>{
-  res.render('favorites');
+  db.animal.findAll()
+  .then(allAnimals=>{
+    res.render('favorites', { faves: allAnimals });
+  }).catch(err=>{
+    console.log(`Big ol error in posting to animals` .red);
+    console.log(err);
+    res.redirect('error')
+  });
 })
 
 router.get('/add', (req, res)=>{
