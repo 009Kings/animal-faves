@@ -42,28 +42,28 @@ var displayFavorites = function() {
   function toggleDesc(toggle, toToggle) {
     if (toToggle.classList.contains('dn')) {
       toToggle.classList.remove('dn');
-      toggle.textContent="Hide Description";
+      toggle.textContent = "Hide Description";
     } else {
       toToggle.classList.add('dn')
-      toggle="Show Description";
+      toggle.textContent = "Show Description";
     }
     
   }
   
   function renderCards(fave) {
     var article = document.createElement('article');
-    article.classList = 'center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 fave-card';
+    article.classList = 'center bg-washed-yellow br3 pa3 pa4-ns mv3 ba b--black-10 fave-card';
     
     // First section
     var titleSection = document.createElement('div');
     titleSection.classList = 'tc'
     var h1 = document.createElement('h1');
-    h1.classList = fave.extinct ? 'f3 mb2 red' : 'f3 mb2';
+    h1.classList = fave.extinct ? 'f3 mb2 red' : 'f3 mb2 purple';
     h1.textContent = fave.species_name;
     titleSection.appendChild(h1);
 
     var h2 = document.createElement('h2');
-    h2.classList = 'f5 fw4 gray mt0 i';
+    h2.classList = 'f5 fw4 light-purple mt0 i';
     h2.textContent = fave.scientific_name;
     titleSection.appendChild(h2);
     
@@ -92,12 +92,12 @@ var displayFavorites = function() {
     var dl = document.createElement('dl');
     dl.classList = 'f6 lh-title mv2';
     var dt = document.createElement('dt');
-    dt.classList = 'dib b mr2';
+    dt.classList = 'dib b mr2 purple';
     dt.textContent = 'Description';
     dl.appendChild(dt);
 
     var dd = document.createElement('dd');
-    dd.classList = 'dib mr2';
+    dd.classList = 'dib mr2 purple';
     dd.textContent = fave.description;
     dl.appendChild(dd);
 

@@ -1,26 +1,26 @@
-<h1>Add a fave</h1>
+<h1 class="mb1 ml2 navy">Add a fave</h1>
 
 <form action="/favorites" method="post" class="pa4 black-80">
   <div class="measure">
-    <label for="species_name" class="f6 b db mb2">Species Name</label>
+    <label for="species_name" class="navy f6 b db mb2">Species Name</label>
     <input id="species_name" name="species_name" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="species name">
   </div>
   <div class="measure">
-    <label for="scientific_name" class="f6 b db mb2">Scientific Name</label>
+    <label for="scientific_name" class="navy f6 b db mb2">Scientific Name</label>
     <input id="scientific_name" name="scientific_name" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="scientific name">
   </div>
   <div class="measure">
-    <label for="image_url" class="f6 b db mb2">Image Url <span class="normal black-60">(optional)</span></label>
+    <label for="image_url" class="navy f6 b db mb2">Image Url <span class="normal black-60">(optional)</span></label>
     <input id="image_url" name="image_url" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="image url">
   </div>
   <div>
-    <label for="description" class="f6 b db mb2">Description</label>
+    <label for="description" class="navy f6 b db mb2">Description</label>
     <textarea id="description" name="description" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" aria-describedby="description"></textarea>
     <small id="comment-desc" class="f6 black-60">If you are looking for more information, try <a href="https://en.wikipedia.org/wiki/Special:Search" class="link underline black-80 hover-blue" target="_blank">Wikipedia</a></small>
   </div>
   <div>
     <input class="mr2" type="checkbox" id="extinct" name="extinct" value="true">
-    <label for="extinct" class="lh-copy">Extinct</label>
+    <label for="extinct" class="navy lh-copy">Extinct</label>
   </div>
-  <div class="mt3"><input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit" value="Add to Favorites"></div>
+  <div class="mt3"><input class="b ph3 pv2 navy input-reset ba b--navy bg-transparent grow pointer f6" type="submit" value="Add to Favorites"></div>
 </form>
